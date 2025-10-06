@@ -64,6 +64,7 @@
         place       : "Sion",
         url         : "https://synd.hevs.io",
         signature   : none,
+        matrikelnummer: "12341234"
       ),
     ),
     keywords : ("HEI-Vs", "Systems Engineering", "Infotronics", "Thesis", "Template"),

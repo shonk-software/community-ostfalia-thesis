@@ -127,11 +127,13 @@
           items: author,
           multiline: true,
         )
-      } else {
+      ] else [
         author.at(0).name
-      }
-      v(2em)
-    }))
+        #v(1em)
+        Matrikelnummer: #author.matrikelnummer
+      ]
+      #v(2em)
+    ])])
 
     titlebox(
       title: title,
@@ -353,12 +355,13 @@
 
   let author_l = get-gendered-label(author.at(0).gender, "author", lang: lang)
   let student_l = get-gendered-label(author.at(0).gender, "student", lang: lang)
-  
+
   table(
     columns: (auto, auto),
     stroke: none,
     align: left + top,
-    table.cell(rowspan: 3)[#if author.at(0).email != none {[#author_l:]}], [#author.at(0).name],
+    table.cell(rowspan: 4)[#if author.at(0).email != none {[#author_l:]}], [#author.at(0).name],
+    [#author.matrikelnummer],
     if lang == "fr" {
       [#if author.at(0).degree != none {student_l} #author.at(0).degree]
     } else {
