@@ -23,7 +23,7 @@
     "degree-programme": "Degree Programme",
     "major": "Major",
     "thesis-title": "Bachelor's Thesis",
-    "midterm-title": "Midterm Report",
+    "midterm-title": "Practial Project",
     "diploma": "Diploma",
     "professor": "Professor",
     "expert": "Expert",
@@ -48,7 +48,8 @@
     "declaration-title": "Declaration of honor",
     "declaration-text": "I, undersigned, hereby declare that the work submitted is the result of a personal work. I certify that I have not resorted to plagiarism or other forms of fraud. All sources of information used and the author quotes were clearly mentioned",
     "declaration-signature-prefix": "Place, date",
-    "declaration-signature": "Signature"
+    "declaration-signature": "Signature",
+    "matriculation-number": "Matriculation Number"
   },
   "fr": {
     "toc-title": "Contenu",
@@ -150,6 +151,7 @@
     "declaration-title": "Ehrenwörtliche Erklärung",
     "declaration-text": "Ich, der/die Unterzeichnende, erkläre hiermit, dass die eingereichte Arbeit das Ergebnis einer eigenen Leistung ist. Ich versichere, dass ich weder Plagiat noch andere Formen von Betrug begangen habe. Alle verwendeten Informationsquellen und Autorenzitate wurden klar angegeben.",
     "declaration-signature-prefix": "Ort, Datum:",
-    "declaration-signature": "Signature:"
+    "declaration-signature": "Signature:",
+    "matriculation-number": "Matrikelnummer"
   }
 }
