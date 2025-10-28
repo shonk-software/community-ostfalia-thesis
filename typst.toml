@@ -1,6 +1,6 @@
 [package]
 name = "community-ostfalia-thesis"
-version = "0.1.0"
+version = "0.3.0"
 compiler = "0.14.2"
 authors = [
   "Ostfalia Template Contributors <https://github.com/0815sailsman/community-ostfalia-thesis-typst>",
