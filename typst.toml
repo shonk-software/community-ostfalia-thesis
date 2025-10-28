@@ -1,5 +1,5 @@
 [package]
-name = "hei-synd-thesis"
+name = "ostfalia-thesis"
 version = "0.3.0"
 compiler = "0.14.2"
 authors = [
@@ -8,10 +8,10 @@ authors = [
   "Louis Heredero <https://github.com/LordBaryhobal>",
   "HEI-Vs <https://synd.hevs.io>",
 ]
-repository = "https://github.com/hei-templates/hei-synd-thesis"
-homepage = "https://synd.hevs.io"
+repository = "https://github.com/0815sailsman/ostfalia-vw-typst-template"
+#homepage = "https://synd.hevs.io"
 license = "MIT"
-description = "A thesis template tailored to the Systems Engineering (Synd) program at the HEI-Vs School of Engineering, Sion, Switzerland."
+description = "A thesis template for a bachelors thesis at the Ostfalia Hochschule für angewandte Wissenschaften, faculty informatics."
 entrypoint = "lib/template-thesis.typ"
 categories = ["thesis", "report", "paper"]
 disciplines = ["engineering", "computer-science", "education"]
@@ -20,14 +20,7 @@ keywords = [
   "Report",
   "Project",
   "University",
-  "HES-SO Valais//Wallis",
-  "HEI",
-  "HEI-Vs",
-  "School of engineering",
-  "Synd",
-  "Systems Engineering",
-  "Infotronics",
-  "Sion",
+  "Ostfalia",
 ]
 
 [template]

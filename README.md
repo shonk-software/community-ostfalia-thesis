@@ -1,31 +1,13 @@
-![GitHub Repo stars](https://img.shields.io/github/stars/hei-templates/hei-synd-thesis)
-![GitHub Release](https://img.shields.io/github/v/release/hei-templates/hei-synd-thesis)
-![](https://tianji.zahno.dev/telemetry/clnzoxcy10001vy2ohi4obbi0/cm7hhbe65003cru047eqabmpg.gif)
-
-<h1 align="center">
-  <br>
-  <img src="https://github.com/hei-templates/hei-synd-logos/blob/5a15ff1e95e012e53c34580554a4834cdec05d01/hei-en.svg" alt="HEI-Vs Logo" width="350">
-  <br>
-  HEI-Vs Engineering School - Systems Engineering
-  <br>
-</h1>
-<div align="center">
-  <br>
-  <img src="https://github.com/hei-templates/hei-synd-logos/blob/5a15ff1e95e012e53c34580554a4834cdec05d01/synd.svg" alt="Industrial Systems Logo" width="350">
-  <br>
-</div>
-
-This is the official template for a Bachelorthesis at the [HEI-Vs Engineering School](https://synd.hevs.io) in Sion, Switzerland. More templates can the found in our [GitHub organization](https://github.com/hei-templates)
-
-![](https://github.com/hei-templates/hei-synd-thesis/blob/main/sample.png)
+This is a template for a bachelorthesis at the [Ostfalia, faculty informatics](https://www.ostfalia.de/hochschule/fakultaeten/fakultaet-informatik).
+It's a modified version of the [HEI-Vs Engineering School template](https://github.com/hei-templates/hei-synd-thesis).
 
 ## Using the template
 
-1. In the `Typst` Univers select the `hei-synd-thesis` template. Locally you can use the Typst CLI to initialise the project:
+1. In the `Typst` Univers select the `ostfalia-thesis` template. Locally you can use the Typst CLI to initialise the project:
 
    ```bash
    # from the typst universe
-   typst init @preview/hei-synd-thesis:0.3.0
+   typst init @preview/ostfalia-thesis:0.3.0
    ```
 
 2. Fill in the metadata in the `metadata.typ` file.
@@ -164,17 +146,8 @@ All notable information about contributing to this project can be found in the [
 
 ## Issues and Support
 
-If you encounter any issues or have questions regarding the course or any of the repositories, please feel free to open an issue in the respective repository. Our team will be happy to assist you.
+If you encounter any issues or have questions regarding the course or any of the repositories, please feel free to open an issue in the respective repository.
 
 ## Changelog
 
-All notable changes to this project are documented in the [CHANGELOG.md](https://github.com/hei-templates/hei-synd-thesis/blob/main/CHANGELOG.md) file.
-
-## Find us on
-
-[hevs.ch](https://synd.hevs.io) &nbsp;&middot;&nbsp;
-LinkedIn [HEI-Vs](https://www.linkedin.com/showcase/school-of-engineering-valais-wallis/) &nbsp;&middot;&nbsp;
-LinkedIn [HES-SO Valais-Wallis](https://www.linkedin.com/groups/104343/) &nbsp;&middot;&nbsp;
-Youtube [HES-SO Valais-Wallis](https://www.youtube.com/user/HESSOVS)
-Twitter [@hessovalais](https://twitter.com/hessovalais) &nbsp;&middot;&nbsp;
-Facebook [@hessovalais](https://www.facebook.com/hessovalais) &nbsp;&middot;&nbsp;
+All notable changes to this project are documented in the [CHANGELOG.md](https://github.com/0815sailsman/ostfalia-vw-typst-template/blob/main/CHANGELOG.md) file.
