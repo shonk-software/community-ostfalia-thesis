@@ -1,6 +1,6 @@
-# Contributing to hei-synd-thesis
+# Contributing to community-ostfalia-thesis
 
-Thanks for your interest in improving the **HEI Typst Thesis Template**! ❤️
+Thanks for your interest in improving the **Ostfalia Typst Thesis Template**! ❤️
 We welcome all contributions — from typo fixes to feature suggestions and style refinements.
 
 If you like the project but can’t contribute code right now, you can still help:
@@ -27,9 +27,9 @@ If you like the project but can’t contribute code right now, you can still hel
 
 Before opening a new issue, please:
 
-1. Check the [README](https://github.com/hei-templates/hei-synd-thesis/blob/main/README.md) and example files.
-2. Search [existing issues](https://github.com/hei-templates/hei-synd-thesis/issues).
-3. If none fit, open a new [issue](https://github.com/hei-templates/hei-synd-thesis/issues/new) with:
+1. Check the [README](https://github.com/0815sailsman/community-ostfalia-thesis-typst/blob/main/README.md) and example files.
+2. Search [existing issues](https://github.com/0815sailsman/community-ostfalia-thesis-typst/issues).
+3. If none fit, open a new [issue](https://github.com/0815sailsman/community-ostfalia-thesis-typst/issues/new) with:
    - A clear description of your question or problem
    - Steps to reproduce (if relevant)
    - Typst version and OS info
@@ -55,7 +55,7 @@ When reporting a bug:
 ## Suggesting Enhancements
 
 Have an idea to improve the template?
-Please open an [issue](https://github.com/hei-templates/hei-synd-thesis/issues/new) and include:
+Please open an [issue](https://github.com/0815sailsman/community-ostfalia-thesis-typst/issues/new) and include:
 
 - A short description of the feature
 - Why it’s useful (especially for students or supervisors)
