@@ -1,4 +1,4 @@
-#import "@preview/hei-synd-thesis:0.3.0": *
+#import "@preview/ostfalia-thesis:0.3.0": *
 
 //-------------------------------------
 // Document options
@@ -29,18 +29,18 @@
   subtitle : "Longer Subtitle",
   author: (
     (
-        gender      : "masculin",  // ["masculin"|"feminin"|"inclusive"]
+        gender      : "inclusive",  // ["masculin"|"feminin"|"inclusive"]
         name        : "Firstname Lastname",
-        email       : "firstname.lastname@hevs.ch",
+        email       : "f.lastname@ostfalia.de",
         degree      : "Bachelor",
-        affiliation : "HEI-Vs",
-        place       : "Sion",
-        url         : "https://synd.hevs.io",
+        affiliation : "Ostfalia",
+        place       : "Wolfenbüttel",
+        url         : "https://www.ostfalia.de/hochschule/fakultaeten/fakultaet-informatik",
         signature   : image("/resources/img/signature.svg", width:3cm),
         matrikelnummer: "12341234"
     ),
   ),
-  keywords : ("HEI-Vs", "Systems Engineering", "Infotronics", "Thesis", "Template"),
+  keywords : ("Ostfalia", "Software Engineering", "Informatics", "Thesis", "Template"),
   version  : "v0.1.0",
 )
 
@@ -57,21 +57,21 @@
   content: [
    This bachelor thesis focuses on the optimization of predictive maintenance systems within industrial IoT environments. Predictive maintenance is a key aspect of modern manufacturing, enabling the anticipation of equipment failures and reducing downtime. The research begins by outlining the theoretical foundations of predictive maintenance, including sensor data acquisition, processing, and analysis. The study then introduces advanced data processing algorithms, such as machine learning techniques, to enhance prediction accuracy and reliability. A case study approach is employed, using real-world industrial data to evaluate the system’s performance. The results demonstrate significant improvements in fault detection rates and decision-making efficiency. The thesis concludes by discussing the implications for industry and providing recommendations for future development. This work aims to contribute to the advancement of smart maintenance systems, supporting industry 4.0 transformation efforts.
   ],
-  address: [HES-SO Valais Wallis • rue de l'Industrie 23 • 1950 Sion \ +41 58 606 85 11 • #link("mailto"+"info@hevs.ch")[info\@hevs.ch] • #link("www.hevs.ch")[www.hevs.ch]]
+  address: [Ostfalia Hochschule für angewandte Wissenschaften • Am Exer 2 • 38302 Wolfenbüttel • #link("https://www.ostfalia.de")[www.ostfalia.de]]
 )
 
 #let professor = (
   (
-    affiliation: "HEI-Vs",
-    name: "Prof. Silvan Zahno",
-    email: "silvan.zahno@hevs.ch",
+    affiliation: "Ostfalia",
+    name: "Prof. Firstname Lastname",
+    email: "f.lastname@ostfalia.de",
   ),
 )
 #let expert = (
   (
     affiliation: "Company",
     name: "Expert Name",
-    email: "expert@domain.ch",
+    email: "expert@domain.de",
   ),
 )
 #let school= (
@@ -83,21 +83,19 @@
   school.name = "Ostfalia Hochschule für angewandte Wissenschaft"
   school.shortname = "HEI-Vs"
   school.orientation = "Informatik"
-  school.specialisation = "Infotronics"
-} else if option.lang == "fr" {
-  school.name = "Haute École d'Ingénierie du Valais, HES-SO"
-  school.shortname = "HEI-Vs"
-  school.orientation = "Systèmes industriels"
-  school.specialisation = "Infotronics"
+  school.specialisation = "Informatik"
+} else if option.lang == "en" {
+  school.name = "Ostfalia University of Applied Sciences"
+  school.orientation = "Informatik"
+  school.specialisation = "Informatik"
 } else {
-  school.name = "University of Applied Sciences Western Switzerland, HES-SO Valais Wallis"
-  school.shortname = "HEI-Vs"
-  school.orientation = "Systems Engineering"
-  school.specialisation = "Infotronics"
+  school.name = "Ostfalia University of Applied Sciences"
+  school.orientation = "Informatics"
+  school.specialisation = "Informatics"
 }
 
 #let date = (
-  submission: datetime(year: 2025, month: 8, day: 14),
+  submission: datetime(year: 2025, month: 10, day: 28),
   mid-term-submission: datetime(year: 2025, month: 5, day: 2),
   today: datetime.today(),
 )
