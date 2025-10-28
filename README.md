@@ -1,9 +1,10 @@
-This is a template for a bachelorthesis at the [Ostfalia, faculty informatics](https://www.ostfalia.de/hochschule/fakultaeten/fakultaet-informatik).
+This is a template for a bachelor thesis / practical project at the [Ostfalia, faculty informatics](https://www.ostfalia.de/hochschule/fakultaeten/fakultaet-informatik).
+
 It's a modified version of the [HEI-Vs Engineering School template](https://github.com/hei-templates/hei-synd-thesis).
 
 ## Using the template
 
-1. In the `Typst` Univers select the `community-ostfalia-thesis` template. Locally you can use the Typst CLI to initialise the project:
+1. In the `Typst` Universe select the `community-ostfalia-thesis` template. Locally you can use the Typst CLI to initialise the project:
 
    ```bash
    # from the typst universe
