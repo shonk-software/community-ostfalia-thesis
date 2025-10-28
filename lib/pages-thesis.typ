@@ -174,7 +174,7 @@
     rows: (10%, 63%, 20%, 7%),
     align(left+horizon)[#logos.topleft],
     align(right+horizon)[#logos.topright],
-    //stroke: 0.5pt,
+    row-gutter: (1cm, 0pt, 0pt), // Add 1 cm of space between top logos and text
     grid.cell(
       colspan: 2,
       align(horizon)[#content-up]
