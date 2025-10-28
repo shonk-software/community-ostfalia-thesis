@@ -19,7 +19,7 @@ All metadata is optional, but it is recommended to fill in as much as possible. 
 | `options`                       | _dictionary_                                  | These are fixed values for the document, who doesn't contribute to the content.                     |
 | `option.type`                   | _string_ ("draft","final")                    | Type of the document. "final" will omit some text at the beginning of chapters (default: `"final"`) |
 | `option.lang`                   | _string_ ("en", "fr", "de")                   | Language of the document. Many element will be changed accordingly (default:`"en"`)                 |
-| `option.template`               | _string_ ("thesis", "midterm")                | Template of the document (default: `"thesis"`)                                                      |
+| `option.template`               | _string_ ("thesis", "practical-project")                | Template of the document (default: `"thesis"`)                                                      |
 | `doc`                           | _dictionary_                                  | Document metadata                                                                                   |
 | `doc.title`                     | _content_                                     | Title of the document.                                                                              |
 | `doc.subtitle`                  | _content_                                     | Subtitle of the document.                                                                           |

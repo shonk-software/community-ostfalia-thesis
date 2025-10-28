@@ -101,15 +101,15 @@
       extra-content-top
     }
 
-    // BACHELOR'S THESIS / Midterm Report
+    // BACHELOR'S THESIS / Practical Project Report
     if template == "thesis" {
       align(center, text(size: huge,
         [*#i18n("thesis-title", lang: lang)*]
       ))
       v(1em)
-    } else if template == "midterm"{
+    } else if template == "practical-project"{
       align(center, text(size: huge,
-        [*#i18n("midterm-title", lang: lang)*]
+        [*#i18n("practial-project-title", lang: lang)*]
       ))
       v(1em)
     }
@@ -161,7 +161,7 @@
       #i18n("submission-date", lang: lang)\
       #icu-datetime.fmt(date, locale: lang, length: "medium")
       //#date.display("[day] [month repr:long] [year]")
-    ] else if template == "midterm" [
+    ] else if template == "practical-project" [
       #i18n("submission-date", lang: lang)\
       #icu-datetime.fmt(date, locale: lang, length: "medium")
       //#date.display("[day] [month repr:long] [year]")
