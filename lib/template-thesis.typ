@@ -48,7 +48,7 @@
 #let thesis(
   option: (
     type        : "final",  // "draft"
-    lang        : "en",     // "de", "fr"
+    lang        : "en",     // "de", "en"
     template    : "thesis", // "midterm"
   ),
   doc: (
@@ -56,18 +56,18 @@
     subtitle : "Longer Subtitle",
     author: (
       (
-        gender      : "masculin",
+        gender      : "inclusive",
         name        : "Firstname Lastname",
-        email       : "firstname.lastname@hevs.ch",
+        email       : "f.lastname@ostfalia.de",
         degree      : "Bachelor",
-        affiliation : "HEI-Vs",
-        place       : "Sion",
-        url         : "https://synd.hevs.io",
+        affiliation : "Ostfalia",
+        place       : "Wolfenbüttel",
+        url         : "https://www.ostfalia.de/hochschule/fakultaeten/fakultaet-informatik",
         signature   : none,
         matrikelnummer: "12341234"
       ),
     ),
-    keywords : ("HEI-Vs", "Systems Engineering", "Infotronics", "Thesis", "Template"),
+    keywords : ("Ostfalia", "Software Engineering", "Informatics", "Thesis", "Template"),
     version  : "v0.1.0",
   ),
   data-page: none,
