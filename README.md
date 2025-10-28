@@ -3,11 +3,11 @@ It's a modified version of the [HEI-Vs Engineering School template](https://gith
 
 ## Using the template
 
-1. In the `Typst` Univers select the `ostfalia-thesis` template. Locally you can use the Typst CLI to initialise the project:
+1. In the `Typst` Univers select the `community-ostfalia-thesis` template. Locally you can use the Typst CLI to initialise the project:
 
    ```bash
    # from the typst universe
-   typst init @preview/ostfalia-thesis:0.3.0
+   typst init @preview/community-ostfalia-thesis:0.1.0
    ```
 
 2. Fill in the metadata in the `metadata.typ` file.

@@ -1,5 +1,5 @@
 [package]
-name = "ostfalia-thesis"
+name = "community-ostfalia-thesis"
 version = "0.1.0"
 compiler = "0.14.2"
 authors = [
