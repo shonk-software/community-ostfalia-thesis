@@ -1,4 +1,4 @@
-This is a template for a bachelor thesis / practical project at the [Ostfalia, faculty informatics](https://www.ostfalia.de/hochschule/fakultaeten/fakultaet-informatik).
+This is a template for a bachelor thesis / practical project at the [Ostfalia, faculty of Computer Science](https://www.ostfalia.de/en/university/faculties/faculty-of-computer-science-it).
 
 It's a modified version of the [HEI-Vs Engineering School template](https://github.com/hei-templates/hei-synd-thesis).
 
