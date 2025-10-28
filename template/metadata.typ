@@ -107,7 +107,6 @@
     } else {
         image("/resources/img/logos/logo-main-en.svg", width: 6cm)
     },
-    topright: image("/resources/img/logos/B2023CW00134_retina_2400.jpg", width: 4cm),
   )
 )
 
