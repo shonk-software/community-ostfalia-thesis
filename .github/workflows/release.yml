@@ -90,6 +90,36 @@ jobs:
           name: changelog
           path: CHANGELOG.md
 
+  build:
+    needs: [prepare]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        lang: ['en', 'de']
+        type: ['draft', 'final']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Install Package
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.release_version }}
+        run: | 
+          mkdir -p ~/.cache/typst/packages/preview/community-ostfalia-thesis/${{ env.RELEASE_VERSION }}
+          cp -r ./ ~/.cache/typst/packages/preview/community-ostfalia-thesis/${{ env.RELEASE_VERSION }}
+
+      - name: Build Thesis - ${{ matrix.lang }}/${{ matrix.type }}
+        run: typst compile template/thesis.typ template/thesis-${{ needs.prepare.outputs.release_version }}-${{ matrix.lang }}_${{ matrix.type }}.pdf --input lang=${{ matrix.lang }} --input type=${{ matrix.type }}
+
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: Thesis-${{ needs.prepare.outputs.release_version }}-${{ matrix.lang }}_${{ matrix.type }}
+          path: template/thesis-${{ needs.prepare.outputs.release_version }}-${{ matrix.lang }}_${{ matrix.type }}.pdf
+
   release:
     needs: [get-version, check-version, build, changelog]
     if: needs.check-version.outputs.should_release == 'true'
