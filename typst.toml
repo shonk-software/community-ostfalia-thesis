@@ -1,6 +1,6 @@
 [package]
 name = "ostfalia-thesis"
-version = "0.3.0"
+version = "0.1.0"
 compiler = "0.14.2"
 authors = [
   "Silvan Zahno <https://github.com/tschinz>",
