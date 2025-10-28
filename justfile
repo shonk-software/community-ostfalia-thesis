@@ -11,7 +11,7 @@ open := if os() == "linux" {
 
 project_dir   := justfile_directory()
 project_name  := file_stem(justfile_directory())
-project_tag   := "0.3.0"
+project_tag   := "0.1.0"
 
 typst_version := "typst -V"
 typst_github  := "https://github.com/typst/typst --tag v0.14.2"
@@ -153,6 +153,8 @@ check-link path:
   rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/sample.svg
   rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/justfile
   rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/template/*.pdf
+  rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/cliff.toml
+  rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/CHANGELOG-HEI.md
 
 # generate changelog and tag for the current release
 @changelog-unreleased:

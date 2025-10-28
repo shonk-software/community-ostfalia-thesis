@@ -1,4 +1,4 @@
-#import "@preview/community-ostfalia-thesis:0.3.0": *
+#import "@preview/community-ostfalia-thesis:0.1.0": *
 
 //-------------------------------------
 // Document options
@@ -86,12 +86,12 @@
   school.specialisation = "Informatik"
 } else if option.lang == "en" {
   school.name = "Ostfalia University of Applied Sciences"
-  school.orientation = "Informatik"
-  school.specialisation = "Informatik"
+  school.orientation = "Informatics"
+  school.specialisation = "Computer Science"
 } else {
   school.name = "Ostfalia University of Applied Sciences"
   school.orientation = "Informatics"
-  school.specialisation = "Informatics"
+  school.specialisation = "Computer Science"
 }
 
 #let date = (
