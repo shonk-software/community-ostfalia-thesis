@@ -109,7 +109,7 @@
       v(1em)
     } else if template == "practical-project"{
       align(center, text(size: huge,
-        [*#i18n("practial-project-title", lang: lang)*]
+        [*#i18n("practical-project-title", lang: lang)*]
       ))
       v(1em)
     }
