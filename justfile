@@ -11,7 +11,7 @@ open := if os() == "linux" {
 
 project_dir   := justfile_directory()
 project_name  := file_stem(justfile_directory())
-project_tag   := "0.3.0"
+project_tag   := "0.1.0"
 
 typst_version := "typst -V"
 typst_github  := "https://github.com/typst/typst --tag v0.14.2"
@@ -190,8 +190,6 @@ open file_name=doc_name:
   just pdf {{file_name}} final en
   just pdf {{file_name}} draft de
   just pdf {{file_name}} final de
-  just pdf {{file_name}} draft fr
-  just pdf {{file_name}} final fr
 
 # cleanup intermediate files
 [linux]
