@@ -8,8 +8,7 @@ authors = [
   "Louis Heredero <https://github.com/LordBaryhobal>",
   "HEI-Vs <https://synd.hevs.io>",
 ]
-repository = "https://github.com/0815sailsman/ostfalia-vw-typst-template"
-#homepage = "https://synd.hevs.io"
+repository = "https://github.com/0815sailsman/ostfalia-typst-template"
 license = "MIT"
 description = "A thesis template for a bachelors thesis at the Ostfalia University of Applied Sciences, faculty informatics."
 entrypoint = "lib/template-thesis.typ"

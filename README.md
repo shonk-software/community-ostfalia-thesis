@@ -150,4 +150,4 @@ If you encounter any issues or have questions regarding the course or any of the
 
 ## Changelog
 
-All notable changes to this project are documented in the [CHANGELOG.md](https://github.com/0815sailsman/ostfalia-vw-typst-template/blob/main/CHANGELOG.md) file.
+All notable changes to this project are documented in the [CHANGELOG.md](https://github.com/0815sailsman/ostfalia-typst-template/blob/main/CHANGELOG.md) file.
