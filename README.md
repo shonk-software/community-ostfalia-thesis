@@ -13,6 +13,16 @@ It's a modified version of the [HEI-Vs Engineering School template](https://gith
 
 2. Fill in the metadata in the `metadata.typ` file.
 
+### Install locally
+If you want to a local copy of the package installed and want to use that, then:
+1. Clone this repository
+2. Install it using
+   ```bash
+   cd community-ostfalia-thesis 
+   just copy-release
+   ```
+   This is going to put a version of the package into you local typst package registry, so make sure not to change it using the ENV_VAR or otherwise.
+
 All metadata is optional, but it is recommended to fill in as much as possible. The metadata is divided into three sections: `options`, `doc`, and `settings`.
 
 | Metadata                        | Type                                          | Description                                                                                         |
