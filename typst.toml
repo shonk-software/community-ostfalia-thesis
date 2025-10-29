@@ -3,14 +3,14 @@ name = "community-ostfalia-thesis"
 version = "0.1.0"
 compiler = "0.14.2"
 authors = [
-  "Ostfalia Template Contributors <https://github.com/0815sailsman/community-ostfalia-thesis-typst>",
+  "Ostfalia Template Contributors <https://github.com/shonk-software/community-ostfalia-thesis>",
   # Original HEI Template Authors:
   "Silvan Zahno <https://github.com/tschinz>",
   "Rémi Heredero <https://github.com/Klagarge>",
   "Louis Heredero <https://github.com/LordBaryhobal>",
   "HEI-Vs <https://synd.hevs.io>",
 ]
-repository = "https://github.com/0815sailsman/community-ostfalia-thesis-typst"
+repository = "https://github.com/shonk-software/community-ostfalia-thesis"
 license = "MIT"
 description = "A thesis template for a bachelors thesis at the Ostfalia University of Applied Sciences, faculty informatics."
 entrypoint = "lib/template-thesis.typ"

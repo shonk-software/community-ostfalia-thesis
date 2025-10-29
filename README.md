@@ -148,8 +148,8 @@ typst compile thesis.typ --input type="draft" --input lang="de"
 
 ## Help
 
-If you need help writting your document look at the [Typst documentation](https://typst.app/docs/) or if ou need more help with the template specifics look at the document [Guide-to-Typst](https://github.com/0815sailsman/community-ostfalia-thesis-typst/guide-to-typst.pdf).
-IF you need help writing your thesis look at the document [Guide-to-Thesis](https://github.com/0815sailsman/community-ostfalia-thesis-typst/blob/main/guide-to-thesis.pdf)
+If you need help writting your document look at the [Typst documentation](https://typst.app/docs/) or if ou need more help with the template specifics look at the document [Guide-to-Typst](https://github.com/shonk-software/community-ostfalia-thesis/guide-to-typst.pdf).
+IF you need help writing your thesis look at the document [Guide-to-Thesis](https://github.com/shonk-software/community-ostfalia-thesis/blob/main/guide-to-thesis.pdf)
 
 ## Contributing
 
@@ -161,4 +161,4 @@ If you encounter any issues or have questions regarding the course or any of the
 
 ## Changelog
 
-All notable changes to this project are documented in the [CHANGELOG.md](https://github.com/0815sailsman/community-ostfalia-thesis-typst/blob/main/CHANGELOG.md) file.
+All notable changes to this project are documented in the [CHANGELOG.md](https://github.com/shonk-software/community-ostfalia-thesis/blob/main/CHANGELOG.md) file.
