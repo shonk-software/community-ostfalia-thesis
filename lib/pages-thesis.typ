@@ -169,20 +169,53 @@
     #v(1em)
   ]
 
+  // grid(
+  //   columns: (50%, 50%),
+  //   rows: (10%, 63%, 20%, 7%),
+  //   align(left+horizon)[#logos.topleft],
+  //   align(right+horizon)[#logos.topright],
+  //   row-gutter: (1cm, 0pt, 0pt), // Add 1 cm of space between top logos and text
+  //   grid.cell(
+  //     colspan: 2,
+  //     align(horizon)[#content-up]
+  //   ),
+  //   grid.cell(
+  //     colspan: 2,
+  //     align(horizon)[#content-down]
+  //   ),
+  //   align(left+horizon)[#logos.bottomleft],
+  //   align(right+horizon)[#logos.bottomright],
+  // )
+
   grid(
     columns: (50%, 50%),
-    rows: (10%, 63%, 20%, 7%),
+    rows: (
+      auto, // Top logos
+      1cm,  // 1 cm space
+      auto, // content-up
+      1fr,  // Flexible space to push the rest down
+      auto, // content-down
+      auto  // Bottom logos
+    ),
+
+    // Logos
     align(left+horizon)[#logos.topleft],
     align(right+horizon)[#logos.topright],
-    row-gutter: (1cm, 0pt, 0pt), // Add 1 cm of space between top logos and text
+
+    grid.cell(colspan: 2, []), // Empty, 1cm-tall cell
+
     grid.cell(
       colspan: 2,
       align(horizon)[#content-up]
     ),
+
+    grid.cell(colspan: 2, []), // Empty, 1fr-tall cell, can get squished
+
     grid.cell(
       colspan: 2,
       align(horizon)[#content-down]
     ),
+
     align(left+horizon)[#logos.bottomleft],
     align(right+horizon)[#logos.bottomright],
   )
