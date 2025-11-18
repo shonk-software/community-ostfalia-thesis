@@ -383,6 +383,12 @@
 
   }
 
+
+    pagebreak()
+    outline(title: "Figures", target: figure.where(kind: image))
+
+
+
   // Main body
   set par(justify: true)
   set page(
