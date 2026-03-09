@@ -4,20 +4,33 @@ on:
   pull_request:
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      release_version: ${{ steps.get_version.outputs.release_version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-  get-ref-version:
-    uses: ./.github/workflows/_reusable-get-version.yml
+      - name: Get version
+        id: get_version
+        run: |
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "Latest tag: $LATEST_TAG"
+          RELEASE_VERSION=$(awk -F'"' '/^version *=/ {print $2; exit}' typst.toml)
+          echo "Release version from typst.toml: $RELEASE_VERSION"
+          echo "RELEASE_VERSION=$RELEASE_VERSION" >> $GITHUB_ENV
+          echo "release_version=$RELEASE_VERSION" >> $GITHUB_OUTPUT
 
-  check-version:
-    needs: [get-ref-version]
+  version:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Check version consistency
-        env:
-          REF_VERSION: ${{ needs.get-ref-version.outputs.version }}
         run: |
           set -euo pipefail
           TYPST_TOML=$(awk -F'"' '/^version *=/ {print $2; exit}' typst.toml)
@@ -28,12 +41,11 @@ jobs:
           echo "justfile:   $JUSTFILE"
           echo "README.md:  $README"
           echo "metadata:   $METADATA"
-          if [ "$REF_VERSION" != "$TYPST_TOML" ] || [ "$REF_VERSION" != "$JUSTFILE" ] || [ "$REF_VERSION" != "$README" ] || [ "$REF_VERSION" != "$METADATA" ]; then
+          if [ "$TYPST_TOML" != "$JUSTFILE" ] || [ "$TYPST_TOML" != "$README" ] || [ "$TYPST_TOML" != "$METADATA" ]; then
             echo "Version mismatch detected!"
             exit 1
           fi
-          echo "All versions match: $REF_VERSION"
-
+          echo "All versions match: $TYPST_TOML"
 
   build:
     needs: [prepare, version]

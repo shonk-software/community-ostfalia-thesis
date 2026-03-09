@@ -56,14 +56,6 @@ jobs:
           git tag -a "$RELEASE_VERSION" -m "Release $RELEASE_VERSION"
           git push origin "$RELEASE_VERSION"
 
-  build:
-    needs: [get-version, check-version, create-tag]
-    if: needs.check-version.outputs.should_release == 'true'
-    uses: ./.github/workflows/_reusable-build.yml
-    with:
-      release_version: ${{ needs.get-version.outputs.version }}
-      build_matrix: '{"lang":["en","fr","de"],"type":["draft","final"]}'
-
   changelog:
     needs: [get-version, check-version, create-tag]
     if: needs.check-version.outputs.should_release == 'true'
