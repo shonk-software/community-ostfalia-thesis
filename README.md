@@ -8,7 +8,7 @@ It's a modified version of the [HEI-Vs Engineering School template](https://gith
 
    ```bash
    # from the typst universe
-   typst init @preview/community-ostfalia-thesis:0.1.0
+   typst init @preview/community-ostfalia-thesis:0.2.0
    ```
 
 2. Fill in the metadata in the `metadata.typ` file.
