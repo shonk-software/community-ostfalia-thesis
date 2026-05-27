@@ -42,7 +42,8 @@
   version  : "v0.1.0",
 )
 
-#let data-page = read("/resources/thesis-data.pdf", encoding: none) // [bytes|none]
+//#let data-page = read("/resources/thesis-data.pdf", encoding: none) // [bytes|none]
+#let data-page = none
 
 #let summary-page = (
   logo: project-logo,
@@ -107,7 +108,7 @@
 //
 #let tableof = (
   toc: true,
-  tof: none,
+  tof: none, // "top", "bottom" or none
   tot: false,
   tol: false,
   toe: false,
@@ -119,5 +120,5 @@
 #let bib = (
   display : true,
   path  : "/tail/bibliography.bib",
-  style : "ieee", //"apa", "chicago-author-date", "chicago-notes", "mla"
+  style : "ieee", // "apa", "chicago-author-date", "chicago-notes", "ieee", "mla"
 )
