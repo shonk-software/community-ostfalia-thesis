@@ -26,11 +26,11 @@ If you want to a local copy of the package installed and want to use that, then:
 All metadata is optional, but it is recommended to fill in as much as possible. The metadata is divided into three sections: `options`, `doc`, and `settings`.
 
 | Metadata                   | Type                                          | Description                                                                                         |
-| -------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+|----------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | `options`                  | _dictionary_                                  | These are fixed values for the document, who doesn't contribute to the content.                     |
 | `option.type`              | _string_ ("draft","final")                    | Type of the document. "final" will omit some text at the beginning of chapters (default: `"final"`) |
 | `option.lang`              | _string_ ("en", "fr", "de")                   | Language of the document. Many element will be changed accordingly (default:`"en"`)                 |
-| `option.template`          | _string_ ("thesis", "practical-project")                | Template of the document (default: `"thesis"`)                                                      |
+| `option.template`          | _string_ ("thesis", "practical-project")      | Template of the document (default: `"thesis"`)                                                      |
 | `doc`                      | _dictionary_                                  | Document metadata                                                                                   |
 | `doc.title`                | _content_                                     | Title of the document.                                                                              |
 | `doc.subtitle`             | _content_                                     | Subtitle of the document.                                                                           |
@@ -75,7 +75,7 @@ All metadata is optional, but it is recommended to fill in as much as possible. 
 | `logos.bottomright`        | _image_                                       | Bottom right logo of the document                                                                   |
 | `tableof`                  | _dictionary_                                  | Table of ... settings for the document                                                              |
 | `tableof.toc`              | _boolean_                                     | Create table of contents (default: `true`)                                                          |
-| `tableof.tof`              | _boolean_                                     | Create table of figures (default: `false`)                                                          |
+| `tableof.tof`              | _string_                                      | If and where to create table of figures (default: `none`, possible values: `"top \| bottom"`)       |
 | `tableof.tot`              | _boolean_                                     | Create table of tables (default: `false`)                                                           |
 | `tableof.tol`              | _boolean_                                     | Create table of listings (default: `false`)                                                         |
 | `tableof.toe`              | _boolean_                                     | Create table of equations (default: `false`)                                                        |

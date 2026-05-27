@@ -135,7 +135,7 @@
 #let toc(
   tableof: (
     toc: true,
-    tof: false,
+    tof: none,
     tot: false,
     tol: false,
     toe: false,

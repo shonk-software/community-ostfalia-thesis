@@ -44,7 +44,7 @@
   ),
   tableof : (
     toc: true,
-    tof: false,
+    tof: none,
     tot: false,
     tol: false,
     toe: false,
@@ -155,7 +155,7 @@
   tableof = if tableof == none {
     (
       toc: true,
-      tof: false,
+      tof: none,
       tot: false,
       tol: false,
       toe: false,
@@ -165,7 +165,7 @@
     tableof
   }
   tableof.toc = tableof.at("toc", default: true)
-  tableof.tof = tableof.at("tof", default: false)
+  tableof.tof = tableof.at("tof", default: none)
   tableof.tot = tableof.at("tot", default: false)
   tableof.tol = tableof.at("tol", default: false)
   tableof.toe = tableof.at("toe", default: false)
@@ -339,6 +339,13 @@
 
   // Table of ...
   pagebreak()
+  let doTofBottom = false
+  if tableof.tof == "top" {
+    tableof.tof = true
+  } else if tableof.tof == "bottom" {
+    doTofBottom = true
+    tableof.tof = false
+  }
   toc(
     tableof: tableof,
     titles: (
@@ -350,12 +357,6 @@
     ),
     before: <sec:glossary>
   )
-
-
-    pagebreak()
-    outline(title: "Figures", target: figure.where(kind: image))
-
-
 
   // Main body
   set par(justify: true)
@@ -372,4 +373,9 @@
   counter(page).update(1)
 
   body
+
+  if doTofBottom {
+      pagebreak()
+      outline(title: "Abbildungsverzeichnis", target: figure.where(kind: image))
+  }
 }
