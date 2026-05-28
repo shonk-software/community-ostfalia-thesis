@@ -2,6 +2,13 @@ This is a template for a bachelor thesis / practical project at the [Ostfalia, f
 
 It's a modified version of the [HEI-Vs Engineering School template](https://github.com/hei-templates/hei-synd-thesis).
 
+## License attribution
+This template is derived from the [HEI-Vs Engineering School template](https://github.com/hei-templates/hei-synd-thesis), licensed under MIT license (see [LICENSE-HEI](./LICENSE-HEI))
+
+Our modifications, including Ostfalia specific layout changes / feature modifications for more flexible placement of certain elements and structural changes, are also released under MIT license (see [LICENSE](./LICENSE)).
+
+Also see [CHANGELOG-HEI.md](./CHANGELOG-HEI.md) for the original project's history and [CHANGELOG.md](./CHANGELOG.md) for changes made to this fork.
+
 ## Using the template
 
 1. In the `Typst` Universe select the `community-ostfalia-thesis` template. Locally you can use the Typst CLI to initialise the project:
