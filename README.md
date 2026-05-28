@@ -1,11 +1,15 @@
 This is a template for a bachelor thesis / practical project at the [Ostfalia, faculty of Computer Science](https://www.ostfalia.de/en/university/faculties/faculty-of-computer-science-it).
 
+The template is unofficial and made by students.
+
 ## License attribution
 This template is derived from the [HEI-Vs Engineering School template](https://github.com/hei-templates/hei-synd-thesis), licensed under MIT license (see [LICENSE-HEI](./LICENSE-HEI))
 
 Our modifications, including Ostfalia specific layout changes / feature modifications for more flexible placement of certain elements and structural changes, are also released under MIT license (see [LICENSE](./LICENSE)).
 
 Also see [CHANGELOG-HEI.md](./CHANGELOG-HEI.md) for the original project's history and [CHANGELOG.md](./CHANGELOG.md) for changes made to this fork.
+
+The logos of the Ostfalia in the english and german version are used with explicit permission by the university.
 
 ## Using the template
 
