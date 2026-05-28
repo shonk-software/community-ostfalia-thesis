@@ -1,7 +1,5 @@
 This is a template for a bachelor thesis / practical project at the [Ostfalia, faculty of Computer Science](https://www.ostfalia.de/en/university/faculties/faculty-of-computer-science-it).
 
-It's a modified version of the [HEI-Vs Engineering School template](https://github.com/hei-templates/hei-synd-thesis).
-
 ## License attribution
 This template is derived from the [HEI-Vs Engineering School template](https://github.com/hei-templates/hei-synd-thesis), licensed under MIT license (see [LICENSE-HEI](./LICENSE-HEI))
 
