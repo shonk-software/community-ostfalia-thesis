@@ -147,11 +147,6 @@ typst compile thesis.typ --input type="draft" --input lang="de"
 - Wavedrom diagrams
 - PlantUML diagrams
 
-## Help
-
-If you need help writing your document look at the [Typst documentation](https://typst.app/docs/) or if you need more help with the template specifics look at the document [Guide-to-Typst](https://github.com/shonk-software/community-ostfalia-thesis/guide-to-typst.pdf).
-If you need help writing your thesis look at the document [Guide-to-Thesis](https://github.com/shonk-software/community-ostfalia-thesis/blob/main/guide-to-thesis.pdf)
-
 ## Contributing
 
 If you would like to contribute to any of the repositories in this organization, please follow these steps:
