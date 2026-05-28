@@ -9,7 +9,7 @@ Our modifications, including Ostfalia specific layout changes / feature modifica
 
 Also see [CHANGELOG-HEI.md](./CHANGELOG-HEI.md) for the original project's history and [CHANGELOG.md](./CHANGELOG.md) for changes made to this fork.
 
-The logos of the Ostfalia in the english and german version are used with explicit permission by the university.
+The logos of the Ostfalia in the english and german version are used with permission by the university.
 
 ## Using the template
 
