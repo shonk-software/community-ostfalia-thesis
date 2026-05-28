@@ -16,6 +16,8 @@ All notable changes to this project will be documented in this file.
 
 - Add License/Attribution section to README ([21866f2](https://github.com/shonk-software/community-ostfalia-thesis/commit/21866f239bfdcd8521e3b8d9a73981700c87f6e1) - flamion)
 
+- Add disclaimer for use of the logos ([e1b92fd](https://github.com/shonk-software/community-ostfalia-thesis/commit/e1b92fd304b2a3c45f55cb2de9f7180b880d9536) - flamion)
+
 
 ## [0.1.0] - 2025-10-28
 - Adjusted template to fit Ostfalia
