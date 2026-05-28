@@ -108,7 +108,6 @@ release_dir := if os() == "macos" {
   rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/justfile
   rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/template/*.pdf
   rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/cliff.toml
-  rm -f {{release_dir}}/{{project_name}}/{{project_tag}}/CHANGELOG-HEI.md
 
 # generate changelog and tag for the current release
 @changelog-unreleased:
