@@ -3,6 +3,7 @@
 // Author     : Silvan Zahno
 //
 #import "helpers.typ": *
+#import "constants.typ": template-practical-project, template-report, template-thesis
 
 #let page-title-thesis(
   title: none,
@@ -349,14 +350,24 @@
   )
 }
 
-#let page-reportinfo(
+#let page-declaration(
   author: (),
   date: none,
   lang: "en",
+  template: template-report,
 ) = {
-  heading(numbering:none, outlined: false)[#i18n("report-info", lang: lang)]
+  if template == template-report {
+    heading(numbering:none, outlined: false)[#i18n("report-info", lang: lang)]
+  } else if template == template-thesis {
+    heading(numbering:none, outlined: false)[#i18n("thesis-info", lang: lang)]
+  } else if(template == template-practical-project) {
+    heading(numbering:none, outlined: false)[#i18n("practical-project-info", lang: lang)]
+  } else {
+    assert(false, message: "Unknown template: " + template)
+  }
   v(2em)
   heading(numbering:none, outlined: false)[*#i18n("contact-info", lang: lang)*]
+
 
   let author_l = if author.gender == "feminin" {
     i18n("author-f", lang: lang)

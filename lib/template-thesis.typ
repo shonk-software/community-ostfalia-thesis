@@ -9,7 +9,7 @@
   option: (
     type        : "final",  // "draft"
     lang        : "en",     // "de", "en"
-    template    : "thesis", // "practical-project"
+    template    : "thesis", // thesis / "practical-project" / "report"
   ),
   doc: (
     title    : "Thesis Template",
@@ -61,6 +61,11 @@
   custom-title-page: none,
   body) = {
   // Sanitize inputs
+  assert(
+    option.template == template-practical-project
+    or option.template == template-report
+    or option.template == template-thesis
+  )
   doc.title    = doc.at("title", default: none)
   doc.subtitle = doc.at("subtitle", default: none)
   doc.author   = if doc.at("author", default: none) == none {
@@ -83,7 +88,7 @@
   doc.author.place = doc.author.at("place", default: none)
   doc.author.url = doc.author.at("url", default: none)
   doc.author.signature = doc.author.at("signature", default: none)
-  doc.keywords = doc.at("keywords", default: ("Typst", "Template", "Thesis", "HEI-Vs", "Systems Engineering"))
+  doc.keywords = doc.at("keywords", default: ("Typst", "Template", "Thesis", "Ostfalia", "Informatics"))
   doc.version  = doc.at("version", default: "v0.1.0")
   summary-page = if summary-page == none {
     (
@@ -331,10 +336,11 @@
 
   // Report info
   pagebreak()
-  page-reportinfo(
+  page-declaration(
     author: doc.author,
     date: date.today,
     lang: option.lang,
+    template: option.template,
   )
 
   // Table of ...

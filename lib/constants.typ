@@ -86,3 +86,7 @@
 #let icon-x-circle     = icons-folder + "x-circle.svg"
 #let icon-x-square     = icons-folder + "x-square.svg"
 #let icon-x            = icons-folder + "x.svg"
+
+#let template-thesis = "thesis"
+#let template-report = "report"
+#let template-practical-project = "practical-project"
