@@ -122,12 +122,12 @@
     #v(2em)
     #if professor != none and (professor.affiliation != none or professor.name != none or professor.email != none ) [
       #i18n("professor", lang: lang)\
-      #professor.affiliation#if (professor.affiliation != none and professor.name != none) or (professor.affiliation != none and professor.email != none) {[, ]}#professor.name#if professor.name != none and professor.email != none {[,]} #link("mailto:professor.email")[#professor.email]
+      #professor.affiliation#if (professor.affiliation != none and professor.name != none) or (professor.affiliation != none and professor.email != none) {[, ]}#professor.name#if professor.name != none and professor.email != none {[,]} #link("mailto:" + professor.email)[#professor.email]
       \ \
     ]
     #if expert != none and (expert.affiliation != none or expert.name != none or expert.email != none ) [
       #i18n("expert", lang: lang)\
-      #expert.affiliation#if (expert.affiliation != none and expert.name != none) or (expert.affiliation != none and expert.email != none) {[, ]}#expert.name#if expert.name != none and expert.email != none {[,]} #link("mailto:expert.email")[#expert.email]
+      #expert.affiliation#if (expert.affiliation != none and expert.name != none) or (expert.affiliation != none and expert.email != none) {[, ]}#expert.name#if expert.name != none and expert.email != none {[,]} #link("mailto:" + expert.email)[#expert.email]
       \ \
     ]
     #if template == "thesis" [
