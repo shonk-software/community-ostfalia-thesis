@@ -231,7 +231,7 @@
           #if address != none {
             option-style()[#address]
           } else {[
-            #option-style()[HES-SO Valais Wallis • rue de l'Industrie 23 • 1950 Sion \ +41 58 606 85 11 • #link("mailto"+"info@hevs.ch")[info\@hevs.ch] • #link("www.hevs.ch")[www.hevs.ch]]
+            #option-style()[Ostfalia Hochschule für angewandte Wissenschaften • Salzdahlumer Straße 46/48 • 38302 Wolfenbüttel • +49 5331 939 0 • #link("mailto:info@ostfalia.de")[info\@ostfalia.de] • #link("www.ostfalia.de")[www.ostfalia.de]]
           ]}
         ],[
           #logos.bottomright
