@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2026-06-08
+
+### 🚀 Features
+
+- Add correct ostfalia address as fallback ([72880e3](https://github.com/shonk-software/community-ostfalia-thesis/commit/72880e32e38a919f7cd73153475dc0d1cfe74660) - flamion)
+- Add additional declaration of honor titles ([79a0f08](https://github.com/shonk-software/community-ostfalia-thesis/commit/79a0f08b3a1ae83d3baaaeab11f65a137a41864e) - flamion)
+
+### 🐛 Bug Fixes
+
+- Fix broken email links ([f407ae1](https://github.com/shonk-software/community-ostfalia-thesis/commit/f407ae1e9d585459c7d6fb171817e450ae41641f) - flamion)
+- Fix incorrect translation of signature in german  ([393771f](https://github.com/shonk-software/community-ostfalia-thesis/commit/393771f8226e7f5d77212b5890109f04b4e234b9) - flamion)
+
+### 🚜 Refactoring
+
+- Remove duplicate code #46 ([964142d](https://github.com/shonk-software/community-ostfalia-thesis/commit/964142d47231421dc02b32a847e6258e54ffd254) - flamion)
+
 ## [0.2.0] - 2026-05-28
 
 ### 🚀 Features

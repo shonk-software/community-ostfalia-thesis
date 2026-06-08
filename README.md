@@ -17,7 +17,7 @@ The logos of the Ostfalia in the english and german version are used with permis
 
    ```bash
    # from the typst universe
-   typst init @preview/community-ostfalia-thesis:0.2.0
+   typst init @preview/community-ostfalia-thesis:0.2.1
    ```
 
 2. Fill in the metadata in the `metadata.typ` file.

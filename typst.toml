@@ -1,6 +1,6 @@
 [package]
 name = "community-ostfalia-thesis"
-version = "0.2.0"
+version = "0.2.1"
 compiler = "0.13.1"
 authors = [
   "Ostfalia Template Contributors <https://github.com/shonk-software/community-ostfalia-thesis>",
