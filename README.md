@@ -1,5 +1,3 @@
-# THIS REPO HAS MOVED TO [OUR FORGEJO INSTANCE](https://git.shonk.software/shonk-software/community-ostfalia-thesis)
-
 This is a template for a bachelor thesis / practical project at the [Ostfalia, faculty of Computer Science](https://www.ostfalia.de/en/university/faculties/faculty-of-computer-science-it).
 
 The template is unofficial and made by students.
